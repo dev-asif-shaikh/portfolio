@@ -1,0 +1,226 @@
+*{
+    margin:0;
+    padding:0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
+}
+
+html, body{
+    width: 100%;
+    height: 100%;   
+}
+*::selection{
+    color: #000000;
+    background-color: #ffffff;
+}
+
+body #followthemouse{
+    transition: all cubic-bezier(0.19, 1, 0.22, 1) 1s;
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    z-index: 99;
+    border-radius: 50%;
+    background-color: #fff;
+}
+
+#main{
+    width: 100%; 
+    background-color: #000;       
+}
+#hero{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    color: #fff;
+    background-color: #000000;
+}
+
+#nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 10px 20px;
+    
+}
+#nav a, h1{
+    color: white;
+    font-weight: 600;
+    text-decoration: none;
+    font-size: 2vw;
+    text-transform: uppercase;
+}
+#bounding
+#heading{
+    margin-top: 70px;
+}
+#heading h1{
+    font-size: 8vw;
+    line-height: 1;
+    opacity: 0.6;
+    margin-left: 17px;
+    text-transform: uppercase;
+}
+#heading #subheading{
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-left: 120px;
+    
+}
+#heading #subheading h2{
+   font-size: 1vw;
+   text-transform: uppercase;
+   opacity: 0.7;
+}
+#smallheading{
+    margin-top: 6vw;
+    padding-right: 20px; 
+}
+#smallheading #p4, #p5{
+    opacity: 0.8;
+    text-transform: uppercase;
+    text-align: right;
+    margin-top: 1vw;
+    font-size: 1vw;
+    line-height:0.5;
+}
+#herofooter{
+    padding: 0 2vw;
+    width: 100%;
+    position: absolute;
+    bottom: 3%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 2.6vh;
+}
+#herofooter a{
+    color: #ffffff;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+#herofooter .svg{
+    transform: translateY(6px);
+}
+#herofooter #iconset{
+    display: flex;
+    gap: 5px;
+}
+#herofooter .circle{
+    transform: translateY(3px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    color: #000000;
+    background-color: #888;
+
+}
+
+#second{
+    padding: 15% 10% 1% 2%;
+    width: 100%;
+    background-color: #000000;
+}
+#second .part{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 3.5vw 3vw;
+    border-top: 1px solid #888;
+    color: #fff;
+}
+
+#second .part .element{
+    text-transform: uppercase;
+    font-size: 5vw;
+    opacity: .7;
+     
+}
+#second .part img{
+    display: none;
+    /* opacity: 0; */
+    height: 100%;
+    z-index: 9;
+    position: absolute;
+     
+}
+
+#about{
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    width: 100%;
+    color: #fff;
+    padding: 10vw 10vw;
+    padding-left: 30vw;
+    background-color: #000;
+    
+}
+#about #aboutdetails{
+    width: 80%;
+    margin: auto;
+}
+#title{
+    color: #fff;
+    opacity: .6;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+    font-size: 1vw;
+
+}
+#text{
+    line-height: 1.5;
+    color: #fff;
+    margin-bottom: 30px;
+}
+#aboutdetails a{
+    margin-top: 50px;
+    padding: 12px 24px;
+    border: 1px solid #fff;
+    border-radius: 100px;
+    color: #fff;
+    font-size: 14px;
+    text-decoration: none;
+}
+#about img{
+    width: 200px;
+}
+#social{
+    width: 100%;
+    background-color: #000;
+    padding-top: 10vw;
+    padding-left: 2vw;
+    padding-bottom: 5vw;
+}
+#social a{
+    color: #ffffff;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+#social .svg{
+    transform: translateY(6px);
+}
+#footer{
+    background-color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 30px;
+    color: #fff;
+}
+#footer #time{
+    padding-left: 16vw;
+}
+#footer a{
+    color: #fff;
+    text-decoration: none;
+}
+
+
