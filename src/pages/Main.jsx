@@ -6,13 +6,12 @@ import Skills from '../components/Skills'
 
 const Main = () => {
   return (
-    <>
-    <Hero/>
-    <Projects/>
-    <Skills/>
-    </>
-  )
-}
+   <div className="container-wide py-4">
+      <Hero />
+      <Projects />
+      <Skills />
+    </div>
+  )}
 
 export default Main
 

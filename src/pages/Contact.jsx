@@ -39,16 +39,16 @@ function Contact() {
                 className="btn btn-react-primary py-3 fw-semibold d-flex align-items-center justify-content-center gap-2 shadow-sm"
               >
                 <FaPaperPlane />
-                <span>Send Pre-Filled Email</span>
+                <span>Send Email</span>
               </a>
 
               <a 
-                href={`/${profileData.resumeFileName}`} 
+                href={`${import.meta.env.BASE_URL}${profileData.resumeFileName}`} 
                 download 
                 className="btn btn-react-secondary py-3 fw-semibold d-flex align-items-center justify-content-center gap-2"
               >
                 <FaFileDownload />
-                <span>Download Official Resume</span>
+                <span>Get Resume</span>
               </a>
             </div>
           </div>
@@ -65,7 +65,7 @@ function Contact() {
               <div className="d-flex flex-column gap-3">
                 
                 <a 
-                  href="https://linkedin.com" 
+                  href="https://www.linkedin.com/in/dev-asif-shaikh/" 
                   target="_blank" 
                   rel="noreferrer" 
                   className="p-3 rounded border border-secondary border-opacity-25 d-flex align-items-center justify-content-between text-decoration-none text-theme-title hover-cyan-card"

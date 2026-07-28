@@ -29,7 +29,6 @@ function Hero() {
     setTilt({ x: rotateX, y: rotateY });
     setMousePos({ x: e.clientX, y: e.clientY });
 
-    // Handle Mouse Pause Detection
     setIsMousePaused(false);
     if (pauseTimerRef.current) clearTimeout(pauseTimerRef.current);
 
@@ -74,8 +73,7 @@ function Hero() {
         
         <div className="col-lg-6 text-start pe-lg-5">
           <div className="d-inline-flex align-items-center gap-2 px-3 py-2 rounded-pill border mb-4">
-            <span className="spinner-grow spinner-grow-sm text-success" role="status" style={{ width: '8px', height: '8px' }}></span>
-            <span className="small text-react-cyan font-monospace fw-semibold">{profileData.status}</span>
+              <span className="small text-react-cyan font-monospace fw-semibold">{profileData.status}</span>
           </div>
 
           <h1 className="display-3 fw-bold text-theme-title mb-3">
@@ -90,7 +88,7 @@ function Hero() {
             <a href={`mailto:${profileData.contactEmail}`} className="btn btn-react-primary px-4 py-3 fs-6 fw-semibold">
               Contact Me
             </a>
-            <a href={`/${profileData.resumeFileName}`} download className="btn btn-react-secondary px-4 py-3 fs-6 fw-semibold">
+            <a href={`${import.meta.env.BASE_URL}${profileData.resumeFileName}`} download className="btn btn-react-secondary px-4 py-3 fs-6 fw-semibold">
               Get Resume
             </a>
           </div>
